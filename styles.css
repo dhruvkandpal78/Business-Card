@@ -1,59 +1,88 @@
 body {
     margin: 20px;
-    /*
-    Challenge:
-    Find a web safe font you like, and add it 
-    to your card.
-    */
-    font-family: Georgia, 'Times New Roman', Times, serif
+    background: radial-gradient(circle at top, #3a0ca3, #240046);
+    font-family: 'Press Start 2P', monospace;
 }
 
-.avatar {
-    width: 200px;
-    box-shadow: 5px 5px 3px #d90429;
-}
-.avatar:hover{
-    box-shadow: 5px 5px 7px #edf2f4;
-    transition: 0.5s ease-in-out;
-     
-}
-
+/* Card container */
 .card {
-    width: 400px;
+    width: 420px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 24px;
     display: flex;
-    justify-content: space-around;
-    text-align: center;
-    background: #2b2d42;
-    color: #edf2f4;
-    border-bottom: 6px solid #d90429;
-    
-    /*
-    Challenge:
-    Find a color palette you like on Coolors.co
-    and use it in your business card.
-     */
+    gap: 20px;
+    align-items: center;
+
+    background: linear-gradient(145deg, #2b2d42, #1b1d2f);
+    color: #f8f9fa;
+
+    border-radius: 14px;
+    border: 3px solid #7209b7;
+    box-shadow:
+        0 0 12px #7209b7,
+        0 0 28px rgba(114, 9, 183, 0.7),
+        inset 0 0 12px rgba(76, 201, 240, 0.2);
+
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
+/* Hover = arcade power-up */
+.card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow:
+        0 0 22px #4cc9f0,
+        0 0 45px rgba(76, 201, 240, 0.8),
+        inset 0 0 22px rgba(247, 37, 133, 0.3);
+}
+
+/* Avatar */
+.avatar {
+    width: 140px;
+    border-radius: 10px;
+    border: 3px solid #f72585;
+
+    box-shadow:
+        0 0 14px #f72585,
+        0 0 28px rgba(247, 37, 133, 0.8);
+
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.06) rotate(-2deg);
+    box-shadow:
+        0 0 20px #4cc9f0,
+        0 0 38px rgba(76, 201, 240, 0.9);
+}
+
+/* Text styling – pixelated */
+.card h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #f1faee;
+    text-shadow:
+        2px 2px 0 #4cc9f0,
+        4px 4px 0 #7209b7;
+}
+
+.card p {
+    margin: 10px 0;
+    font-size: 0.65rem;
+    color: #ffd166;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.card h4 {
+    margin-top: 12px;
+    font-size: 0.6rem;
+    color: #a8dadc;
+    letter-spacing: 1px;
+    font-weight: normal;
+}
+
+/* Optional dotted debug border */
 .border-blue {
-    border: 1px dotted blue;
+    border: 1px dotted cyan;
 }
-
-/*
-Stretch goals:
-Find other ways you can personalize 
-the design of your business card, e.g.:
-- change the border(s)
-- add border radius
-- shuffle the layout
-- shadows        🤯
-- hover effects  🤯🤯
-- animations     🤯🤯🤯
-*/
-
-/*
-Final challenge:
-Download the code to your local computer and place it
-in a folder called "business-card"
-*/
