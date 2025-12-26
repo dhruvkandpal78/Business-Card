@@ -36,9 +36,11 @@ body {
 
 
 .avatar {
+    height: 140px;
     width: 140px;
     border-radius: 10px;
     border: 3px solid #f72585;
+    
 
     box-shadow:
         0 0 14px #f72585,
